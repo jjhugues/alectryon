@@ -216,7 +216,7 @@ In any case, make an exception for comments:
 
     .alectryon-io label.alectryon-input:hover {
         text-decoration: underline dotted #babdb6;
-	    text-shadow: 0 0 1px rgb(46, 52, 54, 0.3); /* #2e3436 + opacity */
+        text-shadow: 0 0 1px rgb(46, 52, 54, 0.3); /* #2e3436 + opacity */
     }
 
     .alectryon-io .alectryon-sentence:hover .alectryon-output {
@@ -254,11 +254,6 @@ In any case, make an exception for comments:
     z-index: 1; /* Default to an index lower than that used by :hover */
 }
 
-@media (any-hover: hover) { /* See note above about this @media query */
-    .alectryon-io .alectryon-sentence:hover .alectryon-output:not(:hover) {
-        display: block;
-    }
-}
 
 .alectryon-io .alectryon-sentence.alectryon-target .alectryon-output {
     display: block;
@@ -295,7 +290,7 @@ In any case, make an exception for comments:
 .alectryon-io .alectryon-goals,
 .alectryon-io .alectryon-messages {
     background: #eeeeec;
-	border: thin solid #d3d7cf; /* Convenient when pre's background is already #EEE */
+    border: thin solid #d3d7cf; /* Convenient when pre's background is already #EEE */
     display: block;
     padding: 0.25em;
 }

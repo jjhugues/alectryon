@@ -79,6 +79,14 @@ var Alectryon;
                     slideshow.previous();
                 else if (e.keyCode == keys.ARROW_DOWN)
                     slideshow.next();
+                else if (e.keyCode == keys.h) {
+                    /* Ctrl or Meta + h activates hover,
+                     * Ctrl or Meta + r reloads the page and deactivate it
+                     */
+                    var sheet = document.createElement('style')
+                    sheet.innerHTML = " .alectryon-io .alectryon-sentence:hover .alectryon-output:not(:hover) {display: block;}";
+                    document.body.appendChild(sheet);
+                }
                 else
                     return;
             } else {
